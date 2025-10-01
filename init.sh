@@ -27,6 +27,7 @@ fi
 echo 'alias python=python3' >> /etc/profile
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
 uv python install
 uv python pin 3.13
 uv run python --version
